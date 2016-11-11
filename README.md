@@ -30,4 +30,22 @@ https://github.com/eorygen/sema2_android/wiki
 Requirements:
 
  - Android Studio
- - Android SDKs
+ - Android SDK Tools
+
+Installation:
+
+This installation guide assumes Android Studio and SDK Tools have been installed. For a guide on how to this, click on https://developer.android.com/studio/install.html and https://developer.android.com/studio/intro/update.html
+
+It is recommended that you install Genymotion emulator free version to test the android app. Genymotion requires that you install VirtualBox VMWare (free) https://docs.genymotion.com/Content/01_Get_Started/Installation.htm
+
+In Android Studio, import the android project. Click File > New > Import Project.
+
+Open file local.properties and update the sdk path:
+
+sdk.dir=/Path_to/Android/sdk
+
+Click Build > Clean Project > Rebuild Project > Run. Select the emulator or device to deploy the app.
+
+If you get project dependencies, that is, third party libraries sync issues in the app build.gradle. Please resolve them before moving on.
+
+If you want to build and trace errors, open Terminal and type: ./gradlew assembleDebug --info --stacktrace
