@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.orygenapps.sema.activity.TextWidgetFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:onClick="dismissKeyboard">
+
+            <!-- Dummy item to prevent the EditText from receiving focus -->
+            <LinearLayout
+                android:focusable="true" android:focusableInTouchMode="true"
+                android:layout_width="0px" android:layout_height="0px"/>
+
+            <TextView
+                android:id="@+id/text_widget_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textSize="@dimen/text_size_question"
+                android:text="Question (Text)"
+                android:textColor="#222222" />
+
+            <TextView
+                android:id="@+id/text_widget_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="Enter your answer:"
+                android:textSize="@dimen/text_size_prompt"
+                android:textColor="#222222" />
+
+            <EditText
+                android:id="@+id/text_widget_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingTop="5dp"
+                android:imeOptions="actionDone"
+                android:singleLine="false"
+                android:minLines="5"
+                android:hint=""
+                android:includeFontPadding="true"
+                android:background="#FFFFFF"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

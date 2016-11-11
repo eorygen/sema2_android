@@ -1,0 +1,29 @@
+<resources>
+
+    <!--Margins-->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--Dashboard-->
+    <dimen name="text_size_streak">60sp</dimen>
+    <dimen name="text_size_header">16sp</dimen>
+    <dimen name="text_size_notification">15sp</dimen>
+    <dimen name="text_size_sub">13sp</dimen>
+
+    <!--Program Info-->
+    <dimen name="text_size_title">24sp</dimen>
+    <dimen name="text_size_program_info">17sp</dimen>
+
+    <!--Icons and Buttons-->
+    <dimen name="list_icon_size">22dp</dimen>
+    <dimen name="text_size_button">16sp</dimen>
+
+    <!--Questions-->
+    <dimen name="text_size_question">16sp</dimen>
+    <dimen name="text_size_prompt">13sp</dimen>
+    <dimen name="text_size_choice">16sp</dimen>
+
+    <!--Login-->
+    <dimen name="text_size_login_prompt">16sp</dimen>
+
+</resources>

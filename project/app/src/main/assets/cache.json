@@ -1,0 +1,152 @@
+{
+    "programs": [
+        {
+            "id": 1,
+            "version_id": 1,
+
+            "display_name": "Public Transport Survey",
+            "description": "A short test survey to gather basic information on public transport use.",
+            
+            "schedule_is_active": true,
+            "schedule_delivery_interval_minutes": 1,
+            "schedule_delivery_variation_minutes": 0,
+            "schedule_survey_expiry_minutes": 1,
+
+            "schedule_start_sending_at_hour": 7,
+            "schedule_start_sending_at_minute": 0,
+            "schedule_stop_sending_at_hour": 21,
+            "schedule_stop_sending_at_minute": 0,
+
+            "contact_name": "John D",
+            "contact_email": "john@email.com",
+            "contact_number": "0400 000 000",
+
+            "surveys": [
+                {
+                    "id": 1,
+                    "answer_trigger_mode": 0,
+                    "max_iterations": 20,
+                    "current_iteration": 0,
+                    "randomise_question_set_display_order": true,
+                    "question_sets": [
+                    {
+                            "id": 1,
+                            "randomise_question_display_order": true,
+                            "questions": [
+                                {
+                                    "id": 1,
+                                    "randomise_choice_display_order": true,
+                                    "question_type": 0,
+                                    "question_text": "What is you first name?",
+                                    "minimum_value": -1,
+                                    "maximum_value": -1,
+                                    "choices": []
+                                },
+                                {
+                                    "id": 2,
+                                    "randomise_choice_display_order": true,
+                                    "question_type": 1,
+                                    "question_text": "Do you use any of the following modes of public transport?",
+                                    "minimum_value": -1,
+                                    "maximum_value": -1,
+                                    "choices": [
+                                        {"id": 1, "display_text": "Train"},
+                                        {"id": 2, "display_text": "Tram"},
+                                        {"id": 3, "display_text": "Bus"}
+                                    ]
+                                },
+                                {
+                                    "id": 3,
+                                    "randomise_choice_display_order": true,
+                                    "question_type": 2,
+                                    "question_text": "What is your most preferred mode of transport?",
+                                    "minimum_value": -1,
+                                    "maximum_value": -1,
+                                    "choices": [
+                                        {"id": 4, "display_text": "Public transport"},
+                                        {"id": 5, "display_text": "Car"},
+                                        {"id": 6, "display_text": "Other"}
+                                    ]
+                                },
+                                {
+                                    "id": 4,
+                                    "randomise_choice_display_order": true,
+                                    "question_type": 3,
+                                    "question_text": "On a scale of 1 (low) to 10 (high), how would you rate the availability of public transport in your area?",
+                                    "minimum_value": 1,
+                                    "maximum_value": 10,
+                                    "choices": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "version_id": 1,
+
+            "display_name": "Second Test Program",
+            "description": "This is the second test program",
+            
+            "schedule_is_active": true,
+            "schedule_delivery_interval_minutes": 120,
+            "schedule_delivery_variation_minutes": 0,
+            "schedule_survey_expiry_minutes": 30,
+
+            "schedule_start_sending_at_hour": 9,
+            "schedule_start_sending_at_minute": 0,
+            "schedule_stop_sending_at_hour": 17,
+            "schedule_stop_sending_at_minute": 0,
+
+            "contact_name": "admin person",
+            "contact_email": "person@adminteam.com",
+            "contact_number": "0414 344 800",
+
+            "surveys": [
+                {
+                    "id": 7,
+                    "answer_trigger_mode": 0,
+                    "max_iterations": 10,
+                    "current_iteration": 0,
+                    "randomise_question_set_display_order": true,
+                    "question_sets": [
+                    {
+                            "id": 12,
+                            "randomise_question_display_order": true,
+                            "questions": [
+                                {
+                                    "id": 9,
+                                    "randomise_choice_display_order": true,
+                                    "question_type": 1,
+                                    "question_text": "Layout scaling test",
+                                    "minimum_value": -1,
+                                    "maximum_value": -1,
+                                    "choices": [
+                                        {"id": 7, "display_text": "Hello"},
+                                        {"id": 8, "display_text": "Foo"},
+                                        {"id": 9, "display_text": "Bar"},
+                                        {"id": 10, "display_text": "Hello"},
+                                        {"id": 11, "display_text": "Foo"},
+                                        {"id": 12, "display_text": "Bar"},
+                                        {"id": 13, "display_text": "Hello"},
+                                        {"id": 14, "display_text": "Foo"},
+                                        {"id": 15, "display_text": "Bar"},
+                                        {"id": 16, "display_text": "Hello"},
+                                        {"id": 17, "display_text": "Foo"},
+                                        {"id": 18, "display_text": "Bar"},
+                                        {"id": 19, "display_text": "Hello"},
+                                        {"id": 20, "display_text": "Foo"},
+                                        {"id": 21, "display_text": "Bar"}
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+
+    ]
+}

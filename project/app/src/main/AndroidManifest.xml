@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.orygenapps.sema" >
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <permission
+        android:name="com.orygenapps.sema.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.orygenapps.sema.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".activity.SEMAApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="au.org.cancervic.sunsmart" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GcmMessageHandler" />
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.DashboardActivity"
+            android:label="@string/title_activity_dashboard"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.ProgramActivity"
+            android:label="@string/title_activity_program"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.SurveyActivity"
+            android:label="@string/title_activity_survey"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.SubmitSurveyActivity"
+            android:label="@string/title_activity_survey_submit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.DemoSurveyActivity"
+            android:label="@string/title_activity_survey"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.SubmitDemoSurveyActivity"
+            android:label="@string/title_activity_demo_survey_submit"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver
+            android:name=".AlarmBroadcastReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.SEMABaseActivity"
+            android:label="@string/title_activity_semabase"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="daf49d8abfeceb9f13929b8077f286d7fed85194" />
+
+        <activity
+            android:name=".activity.ForgotPasswordActivity"
+            android:label="@string/title_activity_login_trouble" >
+        </activity>
+    </application>
+
+</manifest>

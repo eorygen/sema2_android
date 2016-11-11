@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <com.cengalabs.flatui.views.FlatRadioButton
+        android:id="@+id/radio_widget_listitem_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="#0000"
+        flatui:fl_size="20dip"
+        flatui:fl_dotMargin="1dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false" />
+
+    <TextView
+        android:id="@+id/checkbox_widget_listitem_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/text_size_choice"
+        android:text="Question choice"
+        android:textColor="#222222" />
+
+</LinearLayout>
